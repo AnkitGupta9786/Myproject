@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="Enquiry.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Enquiry"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Margin="0,0,0,-49.167">
+            <TextBlock x:Name="textBlock3" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" Text="Enquiry" VerticalAlignment="Top" Style="{StaticResource HeaderTextBlockStyle}" Height="85"/>
+        </StackPanel>
+        <Grid Margin="0,90,20,240" Grid.RowSpan="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="186,5.085,0,0" TextWrapping="Wrap" Text="Source" VerticalAlignment="Top" Width="166" Grid.Row="1"/>
+            <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="186,69.085,0,0" TextWrapping="Wrap" Text="Destination" VerticalAlignment="Top" Width="166" RenderTransformOrigin="1.112,0.619" Grid.Row="1"/>
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="34,5.085,0,0" TextWrapping="Wrap" Text="Source :" VerticalAlignment="Top" Height="39" Width="94" Style="{StaticResource MessageDialogTitleStyle}" Grid.Row="1"/>
+            <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="34,69.085,0,0" TextWrapping="Wrap" Text="Destination :" VerticalAlignment="Top" Height="39" Width="147" Style="{StaticResource MessageDialogTitleStyle}" Grid.Row="1"/>
+            <DatePicker HorizontalAlignment="Left" Margin="186,117.085,0,0" VerticalAlignment="Top" Width="166" Grid.Row="1"/>
+            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="34,127.085,0,0" TextWrapping="Wrap" Text="Date :" VerticalAlignment="Top" Height="39" Width="118" Style="{StaticResource MessageDialogTitleStyle}" Grid.Row="1"/>
+            <Button x:Name="button" Content="Submit" HorizontalAlignment="Left" Margin="113,193.085,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        </Grid>
+
+    </Grid>
+</Page>
