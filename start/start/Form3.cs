@@ -59,7 +59,7 @@ namespace start
             {
                 x = int.Parse(a);
                 y = int.Parse(b);
-                if (x < 1944 || x > 2013 || x == ' ')
+                if (x < 1944 || x > 2013 )
                 {
                     MessageBox.Show("please enter year between 1944 and 2013", "Error");
                 }
